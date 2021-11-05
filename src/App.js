@@ -31,7 +31,7 @@ function App() {
   const [guessedCard, setGuessedCard] = useState(0)
   const [listPointerStyle, setListPointerStyle] = useState({})
   const [moveCount, setMoveCount] = useState(0)
-  const [gameResult, setGameResult] = useState(JSON.parse(localStorage.gameResult) || [])
+  const [gameResult, setGameResult] = useState(localStorage.getItem('gameResult') ? JSON.parse(localStorage.gameResult) : [])
   const [modal, setModal] = useState(false)
 
 
