@@ -33,7 +33,6 @@ function App() {
   const [moveCount, setMoveCount] = useState(0)
   // const [gameResult, setGameResult] = useState(JSON.parse(localStorage.gameResult) || [])
   const [gameResult, setGameResult] = useState([])
-
   const [modal, setModal] = useState(false)
 
 
