@@ -31,21 +31,19 @@ function App() {
   const [guessedCard, setGuessedCard] = useState(0)
   const [listPointerStyle, setListPointerStyle] = useState({})
   const [moveCount, setMoveCount] = useState(0)
-  // const [gameResult, setGameResult] = useState(JSON.parse(localStorage.gameResult) || [])
-  const [gameResult, setGameResult] = useState([])
+  const [gameResult, setGameResult] = useState(localStorage.getItem('gameResult') ? JSON.parse(localStorage.gameResult) : [])
   const [modal, setModal] = useState(false)
 
 
   useEffect(() => {
-    // localStorage.setItem('gameResult', JSON.stringify(gameResult))
-    // setGameResult(prev => [...prev,])
+    localStorage.setItem('gameResult', JSON.stringify(gameResult))
   }, [gameResult])
 
   useEffect(() => {
-    if (activeCard.length === 2){
+    if (activeCard.length === 2) {
       setMoveCount(prev => prev + 1)
 
-      if (activeCard[0] === activeCard[1]){
+      if (activeCard[0] === activeCard[1]) {
         setGuessedCard(prev => prev + 1)
         setGameState(
           prev => prev.map(
