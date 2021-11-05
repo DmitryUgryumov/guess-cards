@@ -1,0 +1,128 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  background:url('./img/Court.jpg') 0 0 no-repeat;
+}
+.game{
+  max-width: 1200px;
+  margin:50px auto 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap:30px 0;
+}
+.game__item{
+  position: relative;
+  flex-basis: 270px;
+  height: 150px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background: none;
+  overflow: hidden;
+  transition: transform .4s;
+}
+.game__item-img{
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transform: scaleX(-1);
+}
+.game__button {
+  display: block;
+  padding: 20px;
+  font-size: 32px;
+  text-align: center;
+  background: #1E90FF;
+  border: none;
+  border-radius: 10px;
+  margin: 0 auto;
+  cursor:pointer;
+}
+.game__button_start{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  margin-top: -26px;
+  margin-left: -88px;
+}
+.game__button_restart {
+  margin-top: 50px;
+}
+.game__result {
+  max-width: 1200px;
+  margin:0 auto;
+  font-size: 36px;
+  background: rgba(65, 105, 225, 0.95);
+  padding: 20px 0 10px;
+}
+.game__result-title{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.game__result-item, .game__result-name{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.game__result-item + .game__result-item {
+  margin-top: 20px;
+}
+.game__result-item span:nth-child(2){
+  display: block;
+  width: 200px;
+  text-align: center;
+  height: auto;
+}
+.button-delete{
+  display: block;
+  padding: 10px;
+  background: darkred;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button-delete-all{
+  margin: 40px auto;
+}
+.game-end-modal {
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom:0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__title {
+  font-size: 60px;
+  color:#1E90FF;
+}
+.modal__form {
+  margin-top: 30px;
+}
+.game-end-form input{
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+}
+.game-end-form input:focus{
+  border:none
+}
+.game-end-form .game__button{
+  margin-top: 30px;
+  padding: 10px;
+}
