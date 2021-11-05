@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/guess-cards/static/css/main.dc23fadc.chunk.css",
-    "main.js": "/guess-cards/static/js/main.5f5eaf2d.chunk.js",
-    "main.js.map": "/guess-cards/static/js/main.5f5eaf2d.chunk.js.map",
+    "main.js": "/guess-cards/static/js/main.4b019b1d.chunk.js",
+    "main.js.map": "/guess-cards/static/js/main.4b019b1d.chunk.js.map",
     "runtime-main.js": "/guess-cards/static/js/runtime-main.5a4f3b5e.js",
     "runtime-main.js.map": "/guess-cards/static/js/runtime-main.5a4f3b5e.js.map",
     "static/js/2.b7ed3270.chunk.js": "/guess-cards/static/js/2.b7ed3270.chunk.js",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.5a4f3b5e.js",
     "static/js/2.b7ed3270.chunk.js",
     "static/css/main.dc23fadc.chunk.css",
-    "static/js/main.5f5eaf2d.chunk.js"
+    "static/js/main.4b019b1d.chunk.js"
   ]
 }
