@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 
-import CardList from "./Components/GameCard/CardList";
-import StartGame from "./Components/GameStart/StartGame";
-import GameRestart from "./Components/GameStart/GameRestart";
-import GameResult from "./Components/GameResult/GameResult";
-import Modal from "./Components/Modal/Modal";
-import Context from "./Components/Context/Context";
-
+import CardList from "./components/GameCard/CardList";
+import StartGame from "./components/GameStart/StartGame";
+import GameRestart from "./components/GameStart/GameRestart";
+import GameResult from "./components/GameResult/GameResult";
+import Modal from "./components/Modal/Modal";
+import Context from "./components/Context/Context";
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -17,7 +16,6 @@ function shuffle(array) {
 
   return array
 }
-
 
 function App() {
   const img = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png']
