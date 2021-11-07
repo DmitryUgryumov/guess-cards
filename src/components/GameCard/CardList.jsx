@@ -1,4 +1,5 @@
 import React from 'react';
+
 import CardItem from "./CardItem";
 
 const CardList = (props) => {
@@ -6,7 +7,8 @@ const CardList = (props) => {
     <div className='game' style={props.style}>
       {
         props.gameState.map(item =>{
-          return <CardItem key={item.id} src={item.src} style={item.style} disabled={item.disabled} gameState={item}/>
+          return <CardItem key={item.id} src={item.src} style={item.style}
+                           disabled={item.disabled} gameState={item}/>
         })
       }
     </div>

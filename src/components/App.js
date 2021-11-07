@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
-import CardList from "./components/GameCard/CardList";
-import StartGame from "./components/GameStart/StartGame";
-import GameRestart from "./components/GameStart/GameRestart";
-import GameResult from "./components/GameResult/GameResult";
-import Modal from "./components/Modal/Modal";
-import Context from "./components/Context/Context";
+import CardList from "./GameCard/CardList";
+import StartGame from "./GameStart/StartGame";
+import GameRestart from "./GameStart/GameRestart";
+import GameResult from "./GameResult/GameResult";
+import Modal from "./Modal/Modal";
+import Context from "./Context/Context";
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -16,6 +16,7 @@ function shuffle(array) {
 
   return array
 }
+
 
 function App() {
   const img = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png']
@@ -59,16 +60,13 @@ function App() {
                 : item
             )
           )
-
           setListPointerStyle({})
         }, 1000)
-
         setListPointerStyle({ pointerEvents: 'none' })
       }
 
       setActiveCard([])
     }
-
   }, [activeCard])
 
   useEffect(() => {
@@ -91,13 +89,13 @@ function App() {
       )
     )
 
-    setActiveCard([...activeCard, src])
+    setActiveCard(prev => [...prev, src])
   }
 
   function gameRestart() {
     let newImg
 
-    setImgSrc( newImg = [...shuffle(img), ...shuffle(img)] )
+    setImgSrc(newImg = [...shuffle(img), ...shuffle(img)])
     setGameState(
       newImg.map((src, index) => {
         return { id: index + 1, src: src, style:{ background:'#1E90FF' }, disabled:false }
@@ -146,6 +144,7 @@ function App() {
             </>
             : null
         }
+
       </Context.Provider>
     </div>
   );

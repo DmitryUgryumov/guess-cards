@@ -1,4 +1,5 @@
 import React from 'react';
+
 import GameResultItem from "./GameResultItem";
 
 const GameResult = ({ gameResult, deleteAllResult }) => {
@@ -10,7 +11,8 @@ const GameResult = ({ gameResult, deleteAllResult }) => {
         {
           gameResult.length
             ? gameResult.map((item, index) => {
-              return <GameResultItem key={item.id} id={item.id} number={index + 1} name={item.name} move={item.move}/>
+              return <GameResultItem key={item.id} id={item.id} number={index + 1}
+                                     name={item.name} move={item.move}/>
             })
             : <h2 className='game__result-title'>Результатов нет</h2>
         }

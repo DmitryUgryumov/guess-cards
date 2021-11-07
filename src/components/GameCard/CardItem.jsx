@@ -21,7 +21,6 @@ const img = {
   8: imgEight
 }
 
-/*window.location.origin + '/img/' + src*/
 const CardItem = ({ src, style, disabled, gameState }) => {
   const { checkActiveCard } = useContext(Context)
   const vis = disabled ? 'visible' : 'hidden'

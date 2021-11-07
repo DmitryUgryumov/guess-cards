@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 html{
-  background:url('./img/Court.jpg') 0 0 no-repeat;
+  background:url('.././img/Court.jpg') 0 0 no-repeat;
 }
 .game{
   max-width: 1200px;
